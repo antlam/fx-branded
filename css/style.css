@@ -1,0 +1,171 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+*
+*  Consistency fixes
+*  adopted from http://necolas.github.com/normalize.css/
+*
+*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'FiraLight';
+  src: url('../fonts/FiraSansOT-Light.otf') format("opentype");
+}
+
+@font-face{
+  font-family: 'FiraRegular';
+  src: url('../fonts/FiraSansOT-Regular.otf') format("opentype");
+}
+
+@font-face{
+  font-family: 'ClearSans';
+  src: url('../fonts/ClearSans-Regular.ttf');
+}
+
+h1 {
+  font-family: ClearSans, Helvetica, sans-serif;
+  font-size: 32px;
+  color: #424F59;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: FiraRegular, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #424F59;
+  padding-bottom: 20px;  
+}
+
+h3 {
+  font-family: FiraRegular, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #424F59;
+  padding-bottom: 20px;
+}
+
+body, p {
+  font-family: ClearSans, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #424F59;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) {
+	#container {
+		outline: 1px solid black;
+		width: 320px;
+		margin: 60px auto;
+	}
+
+	.col-4of4 {
+		width: 100%;
+		float: left;
+		padding: 0 10px 0 10px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	#container {
+		outline: 1px solid green;
+		width: 480px;
+		margin: 60px auto;
+	}
+
+	.col-3of6 {
+		width: 50%;
+		float: left;
+		padding: 0 10px 0 10px;
+	}
+
+	.col-6of6 {
+		width: 100%;
+		float: left;
+		padding: 0 10px 0 10px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	#container {
+		outline: 1px solid red;
+		width: 600px;
+		margin: 60px auto;
+	}
+
+	.col-3of6 {
+		width: 50%;
+		float: left;
+	}
+
+	.col-6of6 {
+		width: 100%;
+		float: left;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
