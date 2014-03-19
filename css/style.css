@@ -63,9 +63,23 @@ section {
   src: url('../fonts/ClearSans-Regular.ttf');
 }
 
+@font-face{
+  font-family: 'ClearLight';
+  src: url('../fonts/ClearSans-Light.ttf');
+}
+
+.fira-font {
+	font-family: FiraRegular, Helvetica, sans-serif;
+}
+
+.clear-font {
+	font-family: ClearSans, Helvetica, sans-serif;
+}
+
 h1 {
-  font-family: ClearSans, Helvetica, sans-serif;
+  font-family: FiraLight, Helvetica, sans-serif;
   font-size: 32px;
+  line-height: 42px;
   color: #424F59;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -74,6 +88,7 @@ h1 {
 h2 {
   font-family: FiraRegular, Helvetica, sans-serif;
   font-size: 24px;
+  line-height: 36px;
   color: #424F59;
   padding-bottom: 20px;  
 }
@@ -81,6 +96,7 @@ h2 {
 h3 {
   font-family: FiraRegular, Helvetica, sans-serif;
   font-size: 18px;
+  line-height: 24px;
   color: #424F59;
   padding-bottom: 20px;
 }
@@ -88,6 +104,7 @@ h3 {
 body, p {
   font-family: ClearSans, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 24px;
   color: #424F59;
   padding-bottom: 20px;
 }
