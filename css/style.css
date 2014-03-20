@@ -123,6 +123,10 @@ h3 {
   padding-bottom: 20px;
 }
 
+body {
+	background-color: #FAFAFA;
+}
+
 body, p {
   font-family: ClearSans, Helvetica, sans-serif;
   font-size: 14px;
@@ -146,6 +150,59 @@ sup {
 	font-size: 96px;
 	line-height: 96px;
 }
+
+.palette {
+	width: 100%;
+	position: relative;
+	margin: 0 10px 10px 10px;
+}
+
+.palette p {
+	font-size: 12px;
+	line-height: 16px;
+	display: inline-block;
+	position: absolute;
+	margin-top: 15px;
+}
+
+.palette span {
+	font-family: ClearLight, Helvetica, sans-serif;
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	margin: 10px 10px 10px 10px;
+}
+
+.light-grey {
+	background-color: #CFD9E1;	
+}
+
+.blue-grey {
+	background-color: #C0CCD6;	
+}
+
+.dark-grey {
+	background-color: #43484E;
+}
+
+.droid-orange {
+	background-color: #FD9326;
+}
+
+.droid-black {
+	background-color: #222222;
+}
+
+.droid-dgrey {
+	background-color: #777777;
+}
+
 
 @media screen and (min-width: 320px) {
 	#container {
@@ -186,6 +243,11 @@ sup {
 		width: 600px;
 		margin: 60px auto;
 		word-wrap: break-word;
+	}
+
+	.col-2of6 {
+		width: 33.33%;
+		float: left;
 	}
 
 	.col-3of6 {
