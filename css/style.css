@@ -132,6 +132,7 @@ body, p, a {
   font-size: 14px;
   line-height: 24px;
   color: #424F59;
+  text-decoration: none;
   padding-bottom: 20px;
 }
 
