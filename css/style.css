@@ -127,12 +127,16 @@ body {
 	background-color: #FAFAFA;
 }
 
-body, p {
+body, p, a {
   font-family: ClearSans, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #424F59;
   padding-bottom: 20px;
+}
+
+a:hover {
+	color: #0092DB;
 }
 
 sup {
