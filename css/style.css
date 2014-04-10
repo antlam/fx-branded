@@ -1,6 +1,8 @@
 @import url(reset.css);
 @import url(fonts.css);
 @import url(layout.css);
+@import url(flexboxgrid.css);
+@import url(forms.css);
 
 h1 {
   font-family: ClearLight, Helvetica, sans-serif;
@@ -110,4 +112,20 @@ sup {
 
 .droid-dgrey {
 	background-color: #777777;
+}
+
+.example {
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+pre {
+    border-left: 5px solid #C0CCD6;
+    padding-left: 15px;
+}
+
+pre > code {
+    white-space: pre-wrap;
 }
