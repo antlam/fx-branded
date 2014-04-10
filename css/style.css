@@ -1,102 +1,6 @@
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-th,
-td,
-article,
-aside,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/*
-*
-*  Consistency fixes
-*  adopted from http://necolas.github.com/normalize.css/
-*
-*/
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/*@font-face{
-  font-family: 'FiraLight';
-  src: url('../fonts/FiraSansOT-Light.otf') format("opentype");
-}
-
-@font-face{
-  font-family: 'FiraRegular';
-  src: url('../fonts/FiraSansOT-Regular.otf') format("opentype");
-}*/
-
-@font-face{
-  font-family: 'ClearSans';
-  src: url('../fonts/ClearSans-Regular.ttf');
-}
-
-@font-face{
-  font-family: 'ClearLight';
-  src: url('../fonts/ClearSans-Light.ttf');
-}
-
-@font-face{
-  font-family: 'CharisRegular';
-  src: url('../fonts/CharisSILCompact-R.ttf');
-}
-
-@font-face {
-	font-family: 'CharisBold';
-	src: url('../fonts/CharisSILCompact-B.ttf');
-}
-
-/*.fira-font {
-	font-family: FiraRegular, Helvetica, sans-serif;
-}*/
-
-.clear-font {
-	font-family: ClearSans, Helvetica, sans-serif;
-}
-
-.clear-fontL {
-	font-family: ClearLight, Helvetica, sans-serif;
-}
-
-.charis-font {
-	font-family: CharisRegular, Helvetica, sans-serif;
-}
-
-.charis-fontB {
-	font-family: CharisBold, Helvetica, sans-serif;
-}
+@import url(reset.css);
+@import url(fonts.css);
+@import url(layout.css);
 
 h1 {
   font-family: ClearLight, Helvetica, sans-serif;
@@ -112,7 +16,7 @@ h2 {
   font-size: 24px;
   line-height: 36px;
   color: #424F59;
-  padding-bottom: 20px;  
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -185,11 +89,11 @@ sup {
 }
 
 .light-grey {
-	background-color: #CFD9E1;	
+	background-color: #CFD9E1;
 }
 
 .blue-grey {
-	background-color: #C0CCD6;	
+	background-color: #C0CCD6;
 }
 
 .dark-grey {
@@ -207,137 +111,3 @@ sup {
 .droid-dgrey {
 	background-color: #777777;
 }
-
-
-@media screen and (min-width: 320px) {
-	#container {
-		width: 320px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-4of4 {
-		width: 100%;
-		float: left;
-		padding: 0 10px 0 10px;
-	}
-}
-
-@media screen and (min-width: 480px) {
-	#container {
-		width: 480px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-3of6 {
-		width: 50%;
-		float: left;
-		padding: 0 10px 0 10px;
-	}
-
-	.col-6of6 {
-		width: 100%;
-		float: left;
-		padding: 0 10px 0 10px;
-	}
-}
-
-@media screen and (min-width: 600px) {
-	#container {
-		width: 600px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-2of6 {
-		width: 33.33%;
-		float: left;
-	}
-
-	.col-3of6 {
-		width: 50%;
-		float: left;
-	}
-
-	.col-6of6 {
-		width: 100%;
-		float: left;
-	}
-}
-
-@media screen and (min-width: 720px) {
-	#container {
-		width: 720px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-3of9 {
-		width: 33.33%;
-		float: left;
-	}
-
-	.col-6of9 {
-		width: 66.66%;
-		float: left;
-	}
-
-	.col-9of9 {
-		width: 100%;
-		float: left;
-	}
-}
-
-@media screen and (min-width: 960px) {
-	#container {
-		width: 960px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-3of12 {
-		width: 25%;
-		float: left;
-	}
-
-	.col-4of12 {
-		width: 33.33%;
-		float: left;
-	}
-
-	.col-6of12 {
-		width: 50%;
-		float: left;
-	}
-
-	.col-12of12 {
-		width: 100%;
-		float: left;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
