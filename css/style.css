@@ -95,22 +95,37 @@ pre > code {
 }
 
 .example {
-    border: 1px #DDD solid;
-    border-radius: 4px 4px 0px 0px;
-    box-shadow: none;
-    padding: 45px 15px 15px;
     position: relative;
+
     margin-bottom: 1.875rem;
+    padding: 45px 15px 15px;
+
+    border: 1px #ddd solid;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
 }
 
 .example:after {
-    content: "Example";
+    font-size: 12px;
+    font-weight: 700;
+
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #BBB;
-    text-transform: uppercase;
+
+    content: 'Example';
     letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #bbb;
+}
+
+.example + pre {
+    margin: -1.875rem 0 1.875rem;
+    padding: 9px 14px;
+
+    border: 1px solid #e1e1e8;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    background-color: #f7f7f9;
 }
