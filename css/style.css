@@ -1,45 +1,12 @@
-@import url(reset.css);
-@import url(fonts.css);
-@import url(layout.css);
-@import url(flexboxgrid.css);
-@import url(forms.css);
-
-h1 {
-  font-family: ClearLight, Helvetica, sans-serif;
-  font-size: 32px;
-  line-height: 42px;
-  color: #424F59;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-h2 {
-  font-family: ClearSans, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 36px;
-  color: #424F59;
-  padding-bottom: 20px;
-}
-
-h3 {
-  font-family: CharisRegular, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: #424F59;
-  padding-bottom: 20px;
-}
-
 body {
 	background-color: #FAFAFA;
 }
 
-body, p, a {
-  font-family: ClearSans, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+body,
+p,
+a {
   color: #424F59;
   text-decoration: none;
-  padding-bottom: 20px;
 }
 
 a:hover {
@@ -47,10 +14,9 @@ a:hover {
 }
 
 sup {
-	font-family: ClearSans, Helvetica, sans-serif;
+	font-family: Clear Sans, Helvetica, sans-serif;
 	color: #C0C9D0;
 	top: -4px;
-  	font-size: 12px;
   	font-weight: 100;
   	line-height: 0;
   	position: relative;

@@ -1,15 +1,19 @@
-/*@font-face{
-  font-family: 'FiraLight';
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/FiraSansOT-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
   src: url('../fonts/FiraSansOT-Light.otf') format("opentype");
 }
 
-@font-face{
-  font-family: 'FiraRegular';
-  src: url('../fonts/FiraSansOT-Regular.otf') format("opentype");
-}*/
-
-@font-face{
-  font-family: 'ClearSans';
+@font-face {
+  font-family: 'Clear Sans';
   src: url('../fonts/ClearSans-Regular.ttf');
 }
 
@@ -28,12 +32,12 @@
     src: url('../fonts/CharisSILCompact-B.ttf');
 }
 
-/*.fira-font {
-    font-family: FiraRegular, Helvetica, sans-serif;
-}*/
+.fira-font {
+    font-family: Fira Sans, Helvetica, sans-serif;
+}
 
 .clear-font {
-    font-family: ClearSans, Helvetica, sans-serif;
+    font-family: Clear Sans, Helvetica, sans-serif;
 }
 
 .clear-fontL {
