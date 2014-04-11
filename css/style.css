@@ -80,13 +80,6 @@ sup {
 	background-color: #777777;
 }
 
-.example {
-    background: #FFF;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
-}
-
 pre {
     border-left: 5px solid #C0CCD6;
     padding-left: 15px;
@@ -94,4 +87,24 @@ pre {
 
 pre > code {
     white-space: pre-wrap;
+}
+
+.example {
+    border: 1px #DDD solid;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: none;
+    padding: 45px 15px 15px;
+    position: relative;
+}
+
+.example:after {
+    content: "Example";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #BBB;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
