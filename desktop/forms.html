@@ -54,6 +54,27 @@
                 </div>
                 <pre><code>&lt;button&gt;Button&lt;/button&gt;
 &lt;button disabled=&quot;disabled&quot;&gt;Disabled button&lt;/button&gt;</code></pre>
+
+                <h2>Controls</h2>
+                <h3>Checkboxes and radios</h3>
+                <div class="example">
+                    <x-checkbox>
+                        <input type="checkbox" value="" id="c1">
+                        <label for="c1">A checkbox</label>
+                    </x-checkbox>
+                    <x-checkbox>
+                        <input type="checkbox" checked="checked" id="c2">
+                        <label for="c2">I'm checked!</label>
+                    </x-checkbox>
+                    <x-checkbox>
+                        <input type="checkbox" value="" id="c3" disabled="disabled">
+                        <label for="c3">Disabled</label>
+                    </x-checkbox>
+                    <x-checkbox>
+                        <input type="checkbox" value="" id="c3" disabled="disabled" checked="checked">
+                        <label for="c3">Disabled and checked</label>
+                    </x-checkbox>
+                </div>
             </div>
         </div>
     </div>
