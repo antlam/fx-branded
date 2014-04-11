@@ -23,6 +23,11 @@ sup {
   	vertical-align: baseline;
 }
 
+ul,
+ol {
+    padding-left: 40px;
+}
+
 .large {
 	font-size: 96px;
 	line-height: 96px;
