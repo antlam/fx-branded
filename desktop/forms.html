@@ -56,25 +56,41 @@
 &lt;button disabled=&quot;disabled&quot;&gt;Disabled button&lt;/button&gt;</code></pre>
 
                 <h2>Controls</h2>
-                <h3>Checkboxes and radios</h3>
+                <h3>Checkboxes</h3>
                 <div class="example">
                     <x-checkbox>
-                        <input type="checkbox" value="" id="c1">
-                        <label for="c1">A checkbox</label>
+                        <input type="checkbox" id="c1">
+                        <label for="c1">Watermelons</label>
                     </x-checkbox>
                     <x-checkbox>
-                        <input type="checkbox" checked="checked" id="c2">
-                        <label for="c2">I'm checked!</label>
+                        <input type="checkbox" id="c2" checked="checked">
+                        <label for="c2">Bananas</label>
                     </x-checkbox>
                     <x-checkbox>
-                        <input type="checkbox" value="" id="c3" disabled="disabled">
-                        <label for="c3">Disabled</label>
+                        <input type="checkbox" id="c3" disabled="disabled">
+                        <label for="c3">Oranges</label>
                     </x-checkbox>
                     <x-checkbox>
-                        <input type="checkbox" value="" id="c3" disabled="disabled" checked="checked">
-                        <label for="c3">Disabled and checked</label>
+                        <input type="checkbox" id="c3" disabled="disabled" checked="checked">
+                        <label for="c3">Apples</label>
                     </x-checkbox>
                 </div>
+                <pre><code>&lt;x-checkbox&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;c1&quot;&gt;
+    &lt;label for=&quot;c1&quot;&gt;Watermelons&lt;/label&gt;
+&lt;/x-checkbox&gt;
+&lt;x-checkbox&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;c2&quot; checked=&quot;checked&quot;&gt;
+    &lt;label for=&quot;c2&quot;&gt;Bananas&lt;/label&gt;
+&lt;/x-checkbox&gt;
+&lt;x-checkbox&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;c3&quot; disabled=&quot;disabled&quot;&gt;
+    &lt;label for=&quot;c3&quot;&gt;Oranges&lt;/label&gt;
+&lt;/x-checkbox&gt;
+&lt;x-checkbox&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;c3&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot;&gt;
+    &lt;label for=&quot;c3&quot;&gt;Apples&lt;/label&gt;
+&lt;/x-checkbox&gt;</code></pre>
             </div>
         </div>
     </div>
