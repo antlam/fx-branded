@@ -1,16 +1,19 @@
 body {
 	background-color: #FAFAFA;
+	color: #424F59;
 }
 
-body,
-p,
 a {
-  color: #424F59;
-  text-decoration: none;
+	color: #0096DC;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #0092DB;
+	color: #4CB1FF;
+}
+
+a:active {
+	color: #FF9500;
 }
 
 sup {
