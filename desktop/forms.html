@@ -47,6 +47,31 @@
                 </div>
                 <pre><code>tbd</code></pre>
 
+                <h3>Disabled form</h3>
+                <div class="example">
+                    <fieldset disabled="disabled">
+                        <legend>A section</legend>
+                        <x-formgroup class="row">
+                            <label class="column-3--hand">Name</label>
+                            <input class="column-9--hand" type="text" placeholder="A placeholder">
+                        </x-formgroup>
+                        <x-formgroup class="row">
+                            <label class="column-3--hand">Password</label>
+                            <input class="column-9--hand" type="password" placeholder="What's the magic word?">
+                        </x-formgroup>
+                        <x-formgroup class="row">
+                            <label class="column-3--hand">Email</label>
+                            <input class="column-9--hand" type="email" placeholder="We won't spam you ;)">
+                        </x-formgroup>
+                        <x-formgroup class="row">
+                            <button class="offset-3--hand">Sign up</button>
+                        </x-formgroup>
+                    </fieldset>
+                </div>
+                <pre><code>&lt;fieldset <strong>disabled=&quot;disabled&quot;</strong>&gt;...&lt;/fieldset&gt;
+&lt;!-- or --&gt;
+&lt;input <strong>disabled=&quot;disabled&quot;</strong>&gt;...&lt;/input&gt;</code></pre>
+
                 <h2>Buttons</h2>
                 <div class="example">
                     <button>Button</button>
