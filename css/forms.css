@@ -37,6 +37,7 @@ input:disabled {
   color: rgba(115,121,128,0.5);
   border-color: rgba(23,50,77,0.25);
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.4));
+  cursor: not-allowed;
 }
 
 label {
@@ -74,12 +75,13 @@ menulist {
     -moz-border-left-colors: none !important;
 }
 
-button:not(:disabled):hover,
+button:enabled:hover,
 menulist:not([disabled='true']):hover {
     background-image: linear-gradient(#fff, rgba(255,255,255,.6));
+    cursor: pointer;
 }
 
-button:not(:disabled):hover:active,
+button:enabled:hover:active,
 menulist[open='true']:not([disabled='true']) {
     background-image: linear-gradient(rgba(255,255,255,.1),
                                       rgba(255,255,255,.6));
@@ -92,6 +94,10 @@ menulist[disabled='true'] {
     background-image: linear-gradient(rgba(255,255,255,.5),
                                       rgba(255,255,255,.1));
     text-shadow: 0 1px 1px #fff;
+}
+
+button:disabled:hover {
+    cursor: not-allowed;
 }
 
 button > .button-box,
@@ -170,7 +176,7 @@ input[type='checkbox'] + label:after {
     background-size: auto 10px;
 }
 
-input[type='checkbox']:hover:not(:disabled) + label:after,
+input[type='checkbox']:hover:enabled + label:after,
 input[type='checkbox']:checked + label:after,
 input[type='checkbox']:disabled:checked + label:after {
     background-image: url('../images/check.svg');
@@ -190,9 +196,15 @@ input[type='radio']:checked:enabled + label:before {
     box-shadow: 0 0 2px 2px rgba(0,150,220,.35), inset 0 0 2px 0 #0096dc;
 }
 
+input[type='checkbox']:enabled + label,
+input[type='radio']:enabled + label {
+    cursor: pointer;
+}
+
 input[type='checkbox']:disabled + label,
 input[type='radio']:disabled + label {
     color: #9ea3a9;
+    cursor: not-allowed;
 }
 
 input[type='checkbox']:disabled:checked + label:after {
