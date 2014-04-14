@@ -115,15 +115,17 @@ button[type='menu'] > .button-box > .button-menu-dropmarker {
     -moz-margin-start: 10px;
 }
 
-/* Checkboxes */
+/* Checkboxes and Radios */
 
-x-checkbox {
+x-checkbox,
+x-radio {
     position: relative;
     display: block;
     margin-bottom: 1rem;
 }
 
-x-checkbox label {
+x-checkbox label,
+x-radio label {
     margin-left: 35px;
 }
 
@@ -202,7 +204,7 @@ input[type='radio']:disabled + label:before  {
     opacity: .5;
 }
 
-/* Radio Buttons */
+/* Radio Button specific styles */
 
 input[type='radio'] + label:before {
     border-radius: 50%;
