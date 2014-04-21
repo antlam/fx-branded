@@ -1,154 +1,32 @@
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-th,
-td,
-article,
-aside,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/*
-*
-*  Consistency fixes
-*  adopted from http://necolas.github.com/normalize.css/
-*
-*/
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/*@font-face{
-  font-family: 'FiraLight';
-  src: url('../fonts/FiraSansOT-Light.otf') format("opentype");
-}
-
-@font-face{
-  font-family: 'FiraRegular';
-  src: url('../fonts/FiraSansOT-Regular.otf') format("opentype");
-}*/
-
-@font-face{
-  font-family: 'ClearSans';
-  src: url('../fonts/ClearSans-Regular.ttf');
-}
-
-@font-face{
-  font-family: 'ClearLight';
-  src: url('../fonts/ClearSans-Light.ttf');
-}
-
-@font-face{
-  font-family: 'CharisRegular';
-  src: url('../fonts/CharisSILCompact-R.ttf');
-}
-
-@font-face {
-	font-family: 'CharisBold';
-	src: url('../fonts/CharisSILCompact-B.ttf');
-}
-
-/*.fira-font {
-	font-family: FiraRegular, Helvetica, sans-serif;
-}*/
-
-.clear-font {
-	font-family: ClearSans, Helvetica, sans-serif;
-}
-
-.clear-fontL {
-	font-family: ClearLight, Helvetica, sans-serif;
-}
-
-.charis-font {
-	font-family: CharisRegular, Helvetica, sans-serif;
-}
-
-.charis-fontB {
-	font-family: CharisBold, Helvetica, sans-serif;
-}
-
-h1 {
-  font-family: ClearLight, Helvetica, sans-serif;
-  font-size: 32px;
-  line-height: 42px;
-  color: #424F59;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-h2 {
-  font-family: ClearSans, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 36px;
-  color: #424F59;
-  padding-bottom: 20px;  
-}
-
-h3 {
-  font-family: CharisRegular, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: #424F59;
-  padding-bottom: 20px;
-}
-
 body {
 	background-color: #FAFAFA;
+	color: #424F59;
 }
 
-body, p, a {
-  font-family: ClearSans, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #424F59;
-  text-decoration: none;
-  padding-bottom: 20px;
+a {
+	color: #0096DC;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #0092DB;
+	color: #4CB1FF;
+}
+
+a:active {
+	color: #FF9500;
 }
 
 sup {
-	font-family: ClearSans, Helvetica, sans-serif;
+	font-family: Clear Sans, Helvetica, sans-serif;
 	color: #C0C9D0;
-	top: -4px;
-  	font-size: 12px;
-  	font-weight: 100;
-  	line-height: 0;
-  	position: relative;
-  	vertical-align: baseline;
+	font-weight: 100;
+	font-size: 0.7rem;
+	line-height: 0;
+}
+
+ul,
+ol {
+    padding-left: 40px;
 }
 
 .large {
@@ -179,17 +57,16 @@ sup {
 	height: 60px;
 	display: inline-block;
 	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
 	border-radius: 30px;
 	margin: 10px 10px 10px 10px;
 }
 
 .light-grey {
-	background-color: #CFD9E1;	
+	background-color: #CFD9E1;
 }
 
 .blue-grey {
-	background-color: #C0CCD6;	
+	background-color: #C0CCD6;
 }
 
 .dark-grey {
@@ -208,136 +85,47 @@ sup {
 	background-color: #777777;
 }
 
-
-@media screen and (min-width: 320px) {
-	#container {
-		width: 320px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-4of4 {
-		width: 100%;
-		float: left;
-		padding: 0 10px 0 10px;
-	}
+pre {
+    border-left: 5px solid #C0CCD6;
+    padding-left: 15px;
 }
 
-@media screen and (min-width: 480px) {
-	#container {
-		width: 480px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
-
-	.col-3of6 {
-		width: 50%;
-		float: left;
-		padding: 0 10px 0 10px;
-	}
-
-	.col-6of6 {
-		width: 100%;
-		float: left;
-		padding: 0 10px 0 10px;
-	}
+pre > code {
+    white-space: pre-wrap;
 }
 
-@media screen and (min-width: 600px) {
-	#container {
-		width: 600px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
+.example {
+    position: relative;
 
-	.col-2of6 {
-		width: 33.33%;
-		float: left;
-	}
+    margin-bottom: 1.875rem;
+    padding: 45px 15px 15px;
 
-	.col-3of6 {
-		width: 50%;
-		float: left;
-	}
-
-	.col-6of6 {
-		width: 100%;
-		float: left;
-	}
+    border: 1px #ddd solid;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
 }
 
-@media screen and (min-width: 720px) {
-	#container {
-		width: 720px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
+.example:after {
+    font-size: 12px;
+    font-weight: 700;
 
-	.col-3of9 {
-		width: 33.33%;
-		float: left;
-	}
+    position: absolute;
+    top: 15px;
+    left: 15px;
 
-	.col-6of9 {
-		width: 66.66%;
-		float: left;
-	}
+    content: 'Example';
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
-	.col-9of9 {
-		width: 100%;
-		float: left;
-	}
+    color: #bbb;
 }
 
-@media screen and (min-width: 960px) {
-	#container {
-		width: 960px;
-		margin: 60px auto;
-		word-wrap: break-word;
-	}
+.example + pre {
+    margin: -1.875rem 0 1.875rem;
+    padding: 9px 14px;
 
-	.col-3of12 {
-		width: 25%;
-		float: left;
-	}
-
-	.col-4of12 {
-		width: 33.33%;
-		float: left;
-	}
-
-	.col-6of12 {
-		width: 50%;
-		float: left;
-	}
-
-	.col-12of12 {
-		width: 100%;
-		float: left;
-	}
+    border: 1px solid #e1e1e8;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    background-color: #f7f7f9;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
