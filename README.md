@@ -1,6 +1,8 @@
 FX-branded
 ==========
 
+**This project is no longer being actively developed. The work has been superceeded by [Project Chameleon](//github.com/johngruen/project-dfa).**
+
 - Baby Chameleon
 - Template grid
 - Responsive
@@ -14,4 +16,5 @@ Preview
 Credit
 ==========
 
-@antlam
+* @antlam
+* @vtsatskin
