@@ -32,6 +32,16 @@
     src: url('../fonts/CharisSILCompact-B.ttf');
 }
 
+@font-face{
+  font-family: 'RobotoRegular';
+  src: url('#');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('#');
+}
+
 .fira-font {
     font-family: Fira Sans, Helvetica, sans-serif;
 }
@@ -50,4 +60,12 @@
 
 .charis-fontB {
     font-family: CharisBold, Helvetica, sans-serif;
+}
+
+.roboto-font {
+    font-family: RobotoRegular, Helvetica, sans-serif;
+}
+
+.roboto-fontL {
+    font-family: RobotoLight, Helvetica, sans-serif;
 }
